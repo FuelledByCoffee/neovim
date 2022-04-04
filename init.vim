@@ -3,11 +3,12 @@
 ": Plugins {{{
 
 ": Install vim-plug if not found {{{
-let s:home = $HOME.'/.config/nvim/'
-let s:vim_plug_dir=expand(s:home.'/autoload')
+let s:home = $HOME.'/.config/nvim'
+let s:plug_file=s:home.'/autoload/plug.vim'
+let s:plug_address='https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-if !filereadable(s:vim_plug_dir.'/plug.vim')
-  exe '!wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -P '.s:vim_plug_dir
+if !filereadable(s:plug_file)
+  silent exe '!curl '.s:plug_address.' -o '.s:plug_file
 endif
 ": }}}
 
@@ -18,30 +19,34 @@ Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'tjdevries/Comment.nvim'
+
 Plug 'christianchiarulli/nvcode-color-schemes.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
-Plug 'Shatur/neovim-ayu'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
+
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons' " Nice icons for telescope
+
+Plug 'tjdevries/Comment.nvim'
 Plug 'scrooloose/nerdcommenter'
+
 Plug 'preservim/nerdtree'
 Plug 'preservim/tagbar'
+
 Plug 'rust-lang/rust.vim'
 Plug 'rhysd/vim-clang-format'
 
 call plug#end()
-
-
 
 
 " Run PlugInstall if there are missing plugins
