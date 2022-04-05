@@ -8,7 +8,7 @@ let s:plug_file=s:home.'/autoload/plug.vim'
 let s:plug_address='https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 if !filereadable(s:plug_file)
-  silent exe '!curl '.s:plug_address.' -o '.s:plug_file
+  silent exe '!curl '.s:plug_address.' --create-dirs -o '.s:plug_file
 endif
 ": }}}
 
