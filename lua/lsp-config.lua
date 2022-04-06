@@ -24,23 +24,17 @@ local custom_lsp_attach = function(client)
   -- require('completion').on_attach()
 end
 
--- connect to server
-require('lspconfig').clangd.setup{
-  on_attach = function()
-    vim.keymap.set("n", "H",  vim.lsp.buf.hover,            { buffer=0 })
-    vim.keymap.set("n", "gd", vim.lsp.buf.definition,       { buffer=0 })
-    vim.keymap.set("n", "gt", vim.lsp.buf.type_definition,  { buffer=0 })
-    vim.keymap.set("n", "gi", vim.lsp.buf.implementation,   { buffer=0 })
-    vim.keymap.set("n", "-r", vim.lsp.buf.rename,           { buffer=0 })
-    vim.keymap.set("n", "-.", vim.lsp.buf.code_action,      { buffer=0 })
-    vim.keymap.set("n", "-n", vim.diagnostic.goto_next,     { buffer=0 })
-    vim.keymap.set("n", "-p", vim.diagnostic.goto_prev,     { buffer=0 })
-    vim.keymap.set("n", "-l", "<cmd>Telescope diagnostics<cr>", { buffer=0 })
 
-    vim.api.nvim_buf_set_option(0, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
-    vim.api.nvim_buf_set_option(0, 'formatexpr', 'v:lua.vim.lsp.formatexpr()')
-  end,
-}
+local servers = { 'pyright', 'rust_analyzer', 'clangd', 'gopls' }
+for _, lsp in pairs(servers) do
+  require('lspconfig')[lsp].setup {
+    on_attach = custom_lsp_attach,
+    flags = {
+      -- This will be the default in neovim 0.7+
+      -- debounce_text_changes = 150,
+    }
+  }
+end
 
 
 -- An example of configuring for `sumneko_lua`,
