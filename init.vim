@@ -284,9 +284,9 @@ function! TermToggle(height, command)
 endfunction
 
 " Toggle terminal on/off (neovim)
-nnoremap <leader>t :call TermToggle(12, $SHELL)<CR>
-nnoremap <leader>r :call TermToggle(12, "make test")<CR>
-tnoremap <leader>t <C-\><C-n>:call TermToggle(12, $SHELL)<CR>
+nnoremap <silent><leader>t :call TermToggle(12, $SHELL)<CR>
+nnoremap <silent><leader>r :call TermToggle(12, "make test")<CR>
+tnoremap <silent><leader>t <C-\><C-n>:call TermToggle(12, $SHELL)<CR>
 
 
 ": }}}
