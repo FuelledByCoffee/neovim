@@ -20,11 +20,16 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+" Completion
+" Plug 'hrsh7th/nvim-cmp'
+" Plug 'hrsh7th/cmp-nvim-lsp'
+" Plug 'hrsh7th/cmp-buffer'
+" Plug 'hrsh7th/cmp-path'
+Plug 'L3MON4D3/LuaSnip'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'christianchiarulli/nvcode-color-schemes.vim'
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'hrsh7th/nvim-cmp'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 
 Plug 'vim-airline/vim-airline'
@@ -144,6 +149,7 @@ nnoremap <leader><space> :call TrimWhitespace()<cr>
 
 lua require('tree-sitter-config')
 lua require('lsp-config')
+" lua require('cmp-config')
 lua require'colorizer'.setup()
 
 ": }}}
