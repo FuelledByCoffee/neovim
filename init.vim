@@ -3,16 +3,16 @@
 ": Plugins {{{
 
 ": Install vim-plug if not found {{{
-let s:home = $HOME.'/.config/nvim'
-let s:plug_file=s:home.'/autoload/plug.vim'
-let s:plug_address='https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+let home=$HOME.'/.config/nvim'
+let plug_file=home.'/autoload/plug.vim'
+let plug_address='https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-if !filereadable(s:plug_file)
-  silent exe '!curl '.s:plug_address.' --create-dirs -o '.s:plug_file
+if !filereadable(plug_file)
+  silent exe '!curl '.plug_address.' --create-dirs -o '.plug_file
 endif
 ": }}}
 
-call plug#begin(s:home.'/plugged')
+call plug#begin(home.'/plugged')
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
