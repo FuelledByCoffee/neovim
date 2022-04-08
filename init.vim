@@ -73,6 +73,8 @@ set nobackup
 set nowritebackup
 set hlsearch
 set incsearch
+set splitright
+set splitbelow
 set foldlevel=0
 set foldmethod=marker
 set tabstop=2
