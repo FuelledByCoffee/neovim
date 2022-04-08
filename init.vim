@@ -114,6 +114,8 @@ set path+=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
 filetype plugin on
 filetype indent on
 
+autocmd filetype help wincmd L
+
 " jump to previous position when reopening a file
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
       \| exe "normal! g'\""
