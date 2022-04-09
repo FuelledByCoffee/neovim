@@ -163,7 +163,6 @@ nnoremap <leader>q :q<cr>
 nnoremap <leader>d :bd<cr>
 nnoremap <leader>Q :qa<cr>
 nnoremap <leader>m :make<cr>
-nnoremap <leader>r :make test<cr>
 
 nnoremap <silent><tab>    :bnext<cr>
 nnoremap <silent><s-tab>  :bNext<cr>
