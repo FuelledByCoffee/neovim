@@ -167,9 +167,6 @@ nnoremap <leader>m :make<cr>
 nnoremap <silent><tab>    :bnext<cr>
 nnoremap <silent><s-tab>  :bNext<cr>
 
-nnoremap <silent>t<tab>   :tnext<cr>
-nnoremap <silent>t<s-tab> :tNext<cr>
-
 xnoremap <tab>   >gv
 xnoremap <S-tab> <gv
 
