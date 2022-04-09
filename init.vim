@@ -178,7 +178,6 @@ inoremap <expr> <S-tab> pumvisible() ? "\<C-p>" : "<S-tab>"
 
 nnoremap <silent>ø zA
 
-nnoremap <silent> // :noh<cr>
 nnoremap <silent><leader>\| <C-W>L
 
 " Move between splits
