@@ -130,13 +130,12 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
 
 
 " Show syntax highlighting groups for word under cursor
-function! <SID>SynStack()
-    if !exists("*synstack")
-        return
-    endif
-    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
-nmap <F2> :call <SID>SynStack()<CR>
+command! CheckHighlightUnderCursor echo {l,c,n ->
+      \   'hi:'    . synIDattr(synID(l, c, 1), n)             . ' -> '
+      \  .'trans:' . synIDattr(synID(l, c, 0), n)             . ' -> '
+      \  .'lo:'    . synIDattr(synIDtrans(synID(l, c, 1)), n)
+      \ }(line("."), col("."), "name")
+nmap <F2> <cmd>CheckHighlightUnderCursor<cr>
 
 
 function! TrimWhitespace()
