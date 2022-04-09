@@ -129,23 +129,6 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
       \| endif
 
 
-" Show syntax highlighting groups for word under cursor
-command! CheckHighlightUnderCursor echo {l,c,n ->
-      \   'hi:'    . synIDattr(synID(l, c, 1), n)             . ' -> '
-      \  .'trans:' . synIDattr(synID(l, c, 0), n)             . ' -> '
-      \  .'lo:'    . synIDattr(synIDtrans(synID(l, c, 1)), n)
-      \ }(line("."), col("."), "name")
-nmap <F2> <cmd>CheckHighlightUnderCursor<cr>
-
-
-function! TrimWhitespace()
-  let l:save = winsaveview()
-  keeppatterns %s/\s\+$//e
-  call winrestview(l:save)
-endfun
-nnoremap <leader><space> :call TrimWhitespace()<cr>
-
-
 lua require('tree-sitter-config')
 lua require('lsp-config')
 " lua require('cmp-config')
@@ -202,6 +185,24 @@ inoremap {;<CR> {<CR>};<ESC>O
 " Escape from terminal mode
 tnoremap <Esc> <C-\><C-n>
 nnoremap <silent> <leader>e :NERDTreeToggle<CR>
+
+
+" Show syntax highlighting groups for word under cursor
+command! CheckHighlightUnderCursor echo {l,c,n ->
+      \   'hi:'    . synIDattr(synID(l, c, 1), n)             . ' -> '
+      \  .'trans:' . synIDattr(synID(l, c, 0), n)             . ' -> '
+      \  .'lo:'    . synIDattr(synIDtrans(synID(l, c, 1)), n)
+      \ }(line("."), col("."), "name")
+nmap <F2> <cmd>CheckHighlightUnderCursor<cr>
+
+
+function! TrimWhitespace()
+  let l:save = winsaveview()
+  keeppatterns %s/\s\+$//e
+  call winrestview(l:save)
+endfun
+nnoremap <leader><space> :call TrimWhitespace()<cr>
+
 ": }}}
 
 ": Floating terminal {{{
