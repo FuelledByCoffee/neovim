@@ -1,7 +1,7 @@
 
 local custom_lsp_attach = function(client)
   -- See `:help nvim_buf_set_keymap()` for more information
-  vim.keymap.set("n", "H",  vim.lsp.buf.hover,            { buffer=0 })
+  vim.keymap.set("n", "K",  vim.lsp.buf.hover,            { buffer=0 })
   vim.keymap.set("n", "gd", vim.lsp.buf.definition,       { buffer=0 })
   vim.keymap.set("n", "gt", vim.lsp.buf.type_definition,  { buffer=0 })
   vim.keymap.set("n", "gi", vim.lsp.buf.implementation,   { buffer=0 })
