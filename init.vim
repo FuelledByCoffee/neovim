@@ -36,7 +36,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-surround'
 
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -71,7 +71,7 @@ let @/ = "" " Don't highlight after source vimrc
 syntax on
 
 set mouse=a
-set number
+set nonumber
 set autoread
 set hidden
 set nobackup
