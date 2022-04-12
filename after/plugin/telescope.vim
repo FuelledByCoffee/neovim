@@ -5,3 +5,4 @@ nnoremap <space>h <cmd>Telescope help_tags<cr>
 nnoremap <space>c <cmd>Telescope commands<cr>
 nnoremap <space>m <cmd>Telescope man_pages<cr>
 nnoremap <space>p <cmd>Telescope pickers<cr>
+nnoremap <space>t <cmd>Telescope<cr>
