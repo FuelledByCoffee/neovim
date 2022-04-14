@@ -39,7 +39,6 @@ Plug 'tpope/vim-fugitive'
 " Plug 'tpope/vim-surround'
 
 Plug 'mhinz/vim-startify'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons' " Nice icons for telescope
 
