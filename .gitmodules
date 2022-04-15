@@ -1,0 +1,60 @@
+[submodule "pack/nvim/start/nvim-lspconfig"]
+	path = pack/nvim/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
+[submodule "pack/nvim/start/nvim-treesitter"]
+	path = pack/nvim/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "pack/nvim/start/popup.nvim"]
+	path = pack/nvim/start/popup.nvim
+	url = https://github.com/nvim-lua/popup.nvim
+[submodule "pack/nvim/start/plenary.nvim"]
+	path = pack/nvim/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim
+[submodule "pack/nvim/start/telescope.nvim"]
+	path = pack/nvim/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim
+[submodule "pack/utility/start/registers.nvim"]
+	path = pack/utility/start/registers.nvim
+	url = https://github.com/tversteeg/registers.nvim
+[submodule "pack/airline/start/vim-airline"]
+	path = pack/airline/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/airline/start/vim-airline-themes"]
+	path = pack/airline/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/tpope/start/vim-fugitive"]
+	path = pack/tpope/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "pack/gutter/start/vim-gitgutter"]
+	path = pack/gutter/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "pack/language-support/start/rust.vim"]
+	path = pack/language-support/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
+[submodule "pack/icons/start/vim-devicons"]
+	path = pack/icons/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
+[submodule "pack/icons/start/nvim-web-devicons"]
+	path = pack/icons/start/nvim-web-devicons
+	url = https://github.com/kyazdani42/nvim-web-devicons
+[submodule "pack/sidebar/start/nerdtree"]
+	path = pack/sidebar/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "pack/sidebar/start/tagbar"]
+	path = pack/sidebar/start/tagbar
+	url = https://github.com/preservim/tagbar
+[submodule "pack/utility/start/nvim-colorizer.lua"]
+	path = pack/utility/start/nvim-colorizer.lua
+	url = https://github.com/norcalli/nvim-colorizer.lua
+[submodule "pack/utility/start/nerdcommenter"]
+	path = pack/utility/start/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule "pack/utility/start/vim-clang-format"]
+	path = pack/utility/start/vim-clang-format
+	url = https://github.com/rhysd/vim-clang-format
+[submodule "pack/start-screen/start/vim-startify"]
+	path = pack/start-screen/start/vim-startify
+	url = https://github.com/mhinz/vim-startify
+[submodule "pack/color-schemes/start/nvcode-color-schemes.vim"]
+	path = pack/color-schemes/start/nvcode-color-schemes.vim
+	url = https://github.com/christianchiarulli/nvcode-color-schemes.vim
