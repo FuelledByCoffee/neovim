@@ -133,14 +133,14 @@ lua require'colorizer'.setup()
 
 inoremap jj <esc>
 
-nnoremap <leader>w :w<cr>
-nnoremap <leader>q :q<cr>
-nnoremap <leader>d :bd<cr>
-nnoremap <leader>Q :qa<cr>
-nnoremap <leader>m :make<cr>
+nnoremap <leader>w <cmd>w<cr>
+nnoremap <leader>q <cmd>q<cr>
+nnoremap <leader>d <cmd>bd<cr>
+nnoremap <leader>Q <cmd>qa<cr>
+nnoremap <leader>m <cmd>make<cr>
 
-nnoremap <silent><tab>    :bnext<cr>
-nnoremap <silent><s-tab>  :bNext<cr>
+nnoremap <silent><tab>    <cmd>bnext<cr>
+nnoremap <silent><s-tab>  <cmd>bNext<cr>
 
 xnoremap <tab>   >gv
 xnoremap <S-tab> <gv
@@ -158,16 +158,16 @@ nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
 nnoremap <C-H> <C-W>h
 
-nnoremap <silent> √ :move+<CR>
-nnoremap <silent> ª :move-2<CR>
+nnoremap <silent> √ <cmd>move+<CR>
+nnoremap <silent> ª <cmd>move-2<CR>
 
-nnoremap <silent> // :noh<cr>
+nnoremap <silent> // <cmd>noh<cr>
 
 " Navigate through quick-fix errors
-nnoremap <C-N> :cn<CR>
-nnoremap <C-P> :cp<CR>
-nnoremap <silent>co :copen<CR>
-nnoremap <silent>cc :cclose<CR>
+nnoremap <C-N> <cmd>cn<CR>
+nnoremap <C-P> <cmd>cp<CR>
+nnoremap <silent>co <cmd>copen<CR>
+nnoremap <silent>cc <cmd>cclose<CR>
 
 nnoremap <leader>y "*y
 nnoremap <leader>p "*p
@@ -177,7 +177,7 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 " Escape from terminal mode
 tnoremap <Esc> <C-\><C-n>
-nnoremap <silent> <leader>e :NERDTreeToggle<CR>
+nnoremap <silent> <leader>e <cmd>NERDTreeToggle<CR>
 
 
 " Show syntax highlighting groups for word under cursor
