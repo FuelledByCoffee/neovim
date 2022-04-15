@@ -1,5 +1,66 @@
 " vim: foldlevel=0
 
+": Plugins {{{
+
+": Install vim-plug if not found {{{
+let home=$HOME.'/.config/nvim'
+let plug_file=home.'/autoload/plug.vim'
+let plug_address='https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+if !filereadable(plug_file)
+  silent exe '!curl -fLo '.plug_address.' --create-dirs '.plug_file
+endif
+": }}}
+
+call plug#begin(home.'/plugged')
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+" Completion
+" Plug 'hrsh7th/nvim-cmp'
+" Plug 'hrsh7th/cmp-nvim-lsp'
+" Plug 'hrsh7th/cmp-buffer'
+" Plug 'hrsh7th/cmp-path'
+Plug 'L3MON4D3/LuaSnip'
+
+Plug 'airblade/vim-gitgutter'
+Plug 'christianchiarulli/nvcode-color-schemes.vim'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-surround'
+
+Plug 'mhinz/vim-startify'
+Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons' " Nice icons for telescope
+
+Plug 'scrooloose/nerdcommenter'
+
+Plug 'preservim/nerdtree'
+Plug 'preservim/tagbar'
+
+Plug 'rust-lang/rust.vim'
+Plug 'rhysd/vim-clang-format'
+
+call plug#end()
+
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+    \| PlugInstall --sync | source $MYVIMRC
+    \| endif
+
+
+": }}}
+
 ": Settings {{{
 
 let mapleader = ','
@@ -249,3 +310,17 @@ set background=dark
 colorscheme primary
 ": }}}
 
+": airline {{{
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 0
+let g:airline#extensions#tabline#show_tab_nr = 0
+let g:airline_theme='powerlineish'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#whitespace#mixed_indent_algo = 2
+let g:airline_detect_modified = 0
+let g:airline_skip_empty_sections = 0
+
+" let g:airline_left_sep=''
+" let g:airline_right_sep=''
+": }}}
