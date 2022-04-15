@@ -16,11 +16,11 @@
 [submodule "pack/utility/start/registers.nvim"]
 	path = pack/utility/start/registers.nvim
 	url = https://github.com/tversteeg/registers.nvim
-[submodule "pack/airline/start/vim-airline"]
-	path = pack/airline/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule "pack/airline/start/vim-airline-themes"]
-	path = pack/airline/start/vim-airline-themes
+[submodule "pack/statusline/start/vim-airline"]
+	path = pack/statusline/start/vim-statusline
+	url = https://github.com/vim-statusline/vim-airline
+[submodule "pack/statusline/start/vim-airline-themes"]
+	path = pack/statusline/start/vim-statusline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
 [submodule "pack/tpope/start/vim-fugitive"]
 	path = pack/tpope/start/vim-fugitive
