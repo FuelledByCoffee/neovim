@@ -111,11 +111,6 @@ set grepprg=rg
 set belloff+=ctrlg
 set signcolumn=yes
 
-set path=.,./src,./include,/usr/local/include,/usr/include
-set path+=$HOME/.local/include
-set path+=/Library/Developer/CommandLineTools/usr/include/c++/v1
-set path+=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
-
 filetype plugin on
 filetype indent on
 

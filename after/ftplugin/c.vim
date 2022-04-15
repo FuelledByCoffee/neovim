@@ -3,6 +3,9 @@ setlocal foldlevelstart=20
 setlocal makeprg=make
 setlocal fo-=o
 
+setlocal path+=/Library/Developer/CommandLineTools/usr/include/c++/v1
+setlocal path+=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+
 " Instead of syntax
 setlocal foldmethod=expr
 setlocal foldexpr=nvim_treesitter#foldexpr()
