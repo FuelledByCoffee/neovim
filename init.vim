@@ -107,7 +107,6 @@ set encoding=UTF-8
 set fillchars=eob:\ ,fold:\ ,
 set diffopt+=vertical
 set updatetime=100
-set runtimepath+=/opt/homebrew/opt/fzf
 set grepprg=rg
 set belloff+=ctrlg
 set signcolumn=yes
