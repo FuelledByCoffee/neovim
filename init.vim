@@ -72,6 +72,7 @@ syntax on
 set mouse=a
 set nonumber
 set autoread
+set autowrite
 set hidden
 set nobackup
 set nowritebackup
