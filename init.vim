@@ -71,6 +71,7 @@ syntax on
 
 set mouse=a
 set nonumber
+set laststatus=3
 set autoread
 set autowrite
 set hidden
