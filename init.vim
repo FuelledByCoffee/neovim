@@ -21,17 +21,21 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 " Completion
-" Plug 'hrsh7th/nvim-cmp'
-" Plug 'hrsh7th/cmp-nvim-lsp'
-" Plug 'hrsh7th/cmp-buffer'
-" Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/cmp-path'
+
 Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'christianchiarulli/nvcode-color-schemes.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 
+" Plug 'feline-nvim/feline.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -44,11 +48,10 @@ Plug 'kyazdani42/nvim-web-devicons' " Nice icons for telescope
 
 Plug 'scrooloose/nerdcommenter'
 
-Plug 'preservim/nerdtree'
-Plug 'preservim/tagbar'
-
-Plug 'rust-lang/rust.vim'
-Plug 'rhysd/vim-clang-format'
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'preservim/tagbar',   { 'on': 'TagbarToggle' }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'rhysd/vim-clang-format', { 'on':  'ClangFormat' }
 
 call plug#end()
 
@@ -128,7 +131,7 @@ lua require('tree-sitter-config')
 lua require('lsp-config')
 " lua require('cmp-config')
 lua require'colorizer'.setup()
-
+" lua require('feline').setup()
 ": }}}
 
 ": Key maps {{{
