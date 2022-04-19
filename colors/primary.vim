@@ -8,7 +8,7 @@ endif
 let g:colors_name='primary'
 
 hi Normal guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Comment guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Comment guifg=#505050 ctermfg=NONE guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Constant guifg=#3ac8c5 ctermfg=80 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi String guifg=#ffdd00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Quote guifg=#ffa026 ctermfg=214 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
