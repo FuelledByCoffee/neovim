@@ -25,7 +25,7 @@ hi Label guifg=#3bffff ctermfg=87 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Operator guifg=#d8d8d2 ctermfg=188 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Keyword guifg=#ff2525 ctermfg=196 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Exception guifg=#ff1dce ctermfg=200 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi PreProc guifg=#ff2525 ctermfg=196 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi PreProc guifg=#af25c5 ctermfg=196 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Include guifg=#ff2525 ctermfg=196 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Define guifg=#ff2525 ctermfg=196 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Title guifg=#ff2525 ctermfg=196 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -248,7 +248,7 @@ hi WhichKeyDesc guifg=#3bffff ctermfg=87 guibg=NONE ctermbg=NONE gui=NONE cterm=
 hi diffAdded guifg=#50ef2b ctermfg=82 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi diffRemoved guifg=#ff2525 ctermfg=196 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi diffFileId guifg=#ffdd00 ctermfg=220 guibg=NONE ctermbg=NONE gui=bold,reverse cterm=bold,reverse
-hi diffNewFile guifg=#50ef2b ctermfg=82 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi diffOldFile guifg=#ff2525 ctermfg=196 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi diffNewFile guifg=#20cf2b ctermfg=82 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi diffOldFile guifg=#c00505 ctermfg=196 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi debugPc guifg=NONE ctermfg=NONE guibg=#3bffff ctermbg=87 gui=NONE cterm=NONE
 hi debugBreakpoint guifg=#ff2525 ctermfg=196 guibg=NONE ctermbg=NONE gui=reverse cterm=reverse
