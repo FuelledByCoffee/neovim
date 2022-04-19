@@ -1,5 +1,5 @@
-nnoremap         gs :tab Git<CR>
-nnoremap <leader>gc :tab Git commit<CR>
+nnoremap         gs :Git       <bar> wincmd L<CR>
+nnoremap <leader>gc :Git commit<bar> wincmd L<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>gr :Gread<CR>
