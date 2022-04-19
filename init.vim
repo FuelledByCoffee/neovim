@@ -15,10 +15,13 @@ endif
 call plug#begin(home.'/plugged')
 
 Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+" Syntax highlighting
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+Plug 'nvim-treesitter/playground'
 
 " Completion
 Plug 'hrsh7th/nvim-cmp'
@@ -27,6 +30,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/cmp-path'
 
+" Snippets
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
@@ -36,8 +40,8 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 
 " Plug 'feline-nvim/feline.nvim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 
 Plug 'tpope/vim-fugitive'
 " Plug 'tpope/vim-surround'
@@ -105,8 +109,8 @@ set shortmess+=c      " Silence insert completion messages
 set completeopt=menu,menuone,noselect
 set omnifunc=syntaxcomplete#Complete
 set cursorline
-set showtabline=2
-set noshowmode
+set showtabline=1
+" set noshowmode
 set termguicolors
 set encoding=UTF-8
 set fillchars=eob:\ ,fold:\ ,
@@ -314,17 +318,3 @@ set background=dark
 colorscheme primary
 ": }}}
 
-": airline {{{
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 0
-let g:airline#extensions#tabline#show_tab_nr = 0
-let g:airline_theme='powerlineish'
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline#extensions#whitespace#mixed_indent_algo = 2
-let g:airline_detect_modified = 0
-let g:airline_skip_empty_sections = 0
-
-" let g:airline_left_sep=''
-" let g:airline_right_sep=''
-": }}}
