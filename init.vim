@@ -34,14 +34,15 @@ Plug 'hrsh7th/cmp-path'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
-Plug 'airblade/vim-gitgutter'
-Plug 'christianchiarulli/nvcode-color-schemes.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 
 " Plug 'feline-nvim/feline.nvim'
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+
+Plug 'airblade/vim-gitgutter'
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -112,7 +113,7 @@ set completeopt=menu,menuone,noselect
 set omnifunc=syntaxcomplete#Complete
 set cursorline
 set showtabline=1
-" set noshowmode
+set noshowmode
 set termguicolors
 set encoding=UTF-8
 set fillchars=eob:\ ,fold:\ ,
