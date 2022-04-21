@@ -63,6 +63,8 @@ SynLink VimFuncName  Function
 SynLink VimFtOption  Constant
 SynLink VimMapModKey Identifier
 SynLink VimIsCommand Variable
+SynLink vimOption    Constant
+SynLink vimVar       Variable
 
 SynLink zshFunction Function
 SynLink zshBrackets Bracket
@@ -180,8 +182,6 @@ SynColor TSTagDelimiter               guifg=#ff1dce ctermfg=200   guibg=NONE    
 SynColor vimMapLhs                    guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor vimMapRhs                    guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor vimBracket                   guifg=#707070 ctermfg=242   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor vimOption                    guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor vimVar                       guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor vimEnvvar                    guifg=#3ac8c5 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor vimParenSep                  guifg=#d8d8d2 ctermfg=188   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor LspDiagnosticsSignWarning    guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
