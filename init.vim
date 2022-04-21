@@ -317,7 +317,6 @@ au colorscheme * highlight EndOfBuffer        ctermfg=NONE guifg=NONE
 " au colorscheme * highlight folded             ctermbg=NONE guibg=NONE
 " au colorscheme * highlight FoldColumn         ctermbg=NONE guibg=NONE
 
-set background=dark
 colorscheme primary
 ": }}}
 
