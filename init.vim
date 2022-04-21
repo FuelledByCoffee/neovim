@@ -1,4 +1,4 @@
-" vim: foldlevel=0
+" vim: foldlevel=0 nowrap
 
 ": Plugins {{{
 
