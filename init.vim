@@ -44,7 +44,9 @@ Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 " Plug 'vim-airline/vim-airline-themes'
 
 Plug 'tpope/vim-fugitive'
-" Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
+
+Plug 'junegunn/vim-easy-align'
 
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
