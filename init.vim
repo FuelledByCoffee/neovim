@@ -178,6 +178,7 @@ nnoremap <C-P> <cmd>cp<CR>
 nnoremap <silent>co <cmd>copen<CR>
 nnoremap <silent>cc <cmd>cclose<CR>
 
+xnoremap <leader>y "*y
 nnoremap <leader>y "*y
 nnoremap <leader>p "*p
 
