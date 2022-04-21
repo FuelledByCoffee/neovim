@@ -299,24 +299,3 @@ tnoremap <silent><leader>t <C-\><C-n>:call TermToggle(12, $SHELL)<CR>
 
 
 ": }}}
-
-": Colorscheme {{{
-
-let g:nvcode_termcolors=256
-
-" No background color. Persist after setting colorscheme.
-" Only sets when colorsceme is set
-au colorscheme * highlight Normal             ctermbg=NONE guibg=NONE
-au colorscheme * highlight NonText            ctermbg=NONE guibg=NONE
-au colorscheme * highlight Text               ctermbg=NONE guibg=NONE
-au colorscheme * highlight LineNr             ctermbg=NONE guibg=NONE
-au colorscheme * highlight CursorLineNR       ctermbg=NONE guibg=NONE
-au colorscheme * highlight SignColumn         ctermbg=NONE guibg=NONE
-au colorscheme * highlight EndOfBuffer        ctermfg=NONE guifg=NONE
-
-" au colorscheme * highlight folded             ctermbg=NONE guibg=NONE
-" au colorscheme * highlight FoldColumn         ctermbg=NONE guibg=NONE
-
-colorscheme primary
-": }}}
-
