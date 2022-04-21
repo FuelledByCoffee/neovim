@@ -44,7 +44,7 @@ SynLink TSConstMacro      PreProc
 SynLink TSMacro           PreProc
 SynLink TSVariable        Variable
 SynLink TSConstant        Constant
-SynLink TSFuncBuiltin     Function
+SynLink TSFuncBuiltin     Keyword
 SynLink TSFunction        Function
 SynLink TSString          String
 SynLink TSKeyword         Keyword
@@ -53,6 +53,9 @@ SynLink TSNumber          Constant
 SynLink TSKeywordOperator Keyword
 SynLink TSRepeat          Keyword
 SynLink TSPunctBracket    Bracket
+SynLink TSVariableBuiltin Variable
+
+SynLink BashTSFunction Keyword
 
 SynLink vimCommand   statement
 SynLink VimMap       Statement
