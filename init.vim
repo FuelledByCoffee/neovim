@@ -78,6 +78,7 @@ let g:c_syntax_for_h=1
 let @/ = "" " Don't highlight after source vimrc
 
 syntax on
+colorscheme primary
 
 set mouse=a
 set nonumber
