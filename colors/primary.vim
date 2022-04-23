@@ -30,6 +30,8 @@ endif
 SynLink String      Constant
 SynLink Number      Constant
 SynLink Conditional Keyword
+SynLink Parameter   Variable
+SynLink Method      Function
 
 SynLink Include PreProc
 SynLink Define  PreProc
@@ -44,7 +46,7 @@ SynLink TSConstMacro      PreProc
 SynLink TSMacro           PreProc
 SynLink TSVariable        Variable
 SynLink TSConstant        Constant
-SynLink TSFuncBuiltin     Keyword
+SynLink TSFuncBuiltin     Function
 SynLink TSFunction        Function
 SynLink TSString          String
 SynLink TSKeyword         Keyword
@@ -54,6 +56,8 @@ SynLink TSKeywordOperator Keyword
 SynLink TSRepeat          Keyword
 SynLink TSPunctBracket    Bracket
 SynLink TSVariableBuiltin Variable
+SynLink TSParameter       Parameter
+SynLink TSMethod          Method
 
 SynLink BashTSFunction Keyword
 
@@ -69,15 +73,16 @@ SynLink VimIsCommand Variable
 SynLink vimOption    Constant
 SynLink vimVar       Variable
 
-SynLink zshFunction Function
-SynLink zshBrackets Bracket
-SynLink zshRedir    Operator
+SynLink zshFunction    Function
+SynLink zshBrackets    Bracket
+SynLink zshRedir       Operator
+SynLink zshVariableDef Variable
 ": }}}
 
 SynColor Normal                       guifg=NONE    ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Variable                     guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor Variable                     guifg=#4fa0f7 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=Bold
 SynColor Function                     guifg=#0098ea ctermfg=4     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Keyword                      guifg=#ffd026 ctermfg=3     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor Keyword                      guifg=#fcc016 ctermfg=3     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor PreProc                      guifg=#af25c5 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Special                      guifg=#d21d27 ctermfg=1     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Type                         guifg=#42bdf7 ctermfg=75    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
@@ -167,9 +172,7 @@ SynColor TSAnnotation                 guifg=#ffdd00 ctermfg=220   guibg=NONE    
 SynColor TSAttribute                  guifg=#3ac8c5 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSNamespace                  guifg=#ff1dce ctermfg=200   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSFuncMacro                  guifg=#ad13f9 ctermfg=129   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor TSParameter                  guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSParameterReference         guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor TSMethod                     guifg=#10bf0b ctermfg=34    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSField                      guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSProperty                   guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSConstructor                guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
