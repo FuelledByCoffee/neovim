@@ -1,15 +1,44 @@
+
+function! LightlineFilename()
+  let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+  let modified = &modified ? ' +' : ''
+  let readonly = &readonly ? ' ' : ''
+  return readonly . filename . modified
+endfunction
+
+function! LightlineBranch()
+  let branchname = FugitiveHead()
+  return branchname != '' ? ' ' . branchname : ''
+endfunction
+
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+
+set statusline+=%{GitStatus()}
 let g:lightline = {
       \ 'colorscheme': 'default',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \             [ 'gitbranch', 'gitstatus', 'filename' ] ]
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
+      \   'gitstatus' : 'GitStatus',
+      \   'gitbranch' : 'LightlineBranch',
+      \   'filename': 'LightlineFilename',
       \ },
       \ }
 
-let g:lightline.subseparator = { 'left': '│', 'right': '│' }
+": Powerlineglyphs {{{
+"                                          
+": }}}
+ 
+" let g:lightline.subseparator = { 'left': '│', 'right': '│' }
+let g:lightline.separator = { 'left': " ", 'right': "" }
+let g:lightline.subseparator = { 'left': "", 'right': "" }
+
+let g:lightline.component_raw = { 'Hello' : 1 }
 
 let g:lightline.mode_map = {
     \ 'n' : 'NORMAL',
