@@ -5,6 +5,13 @@ let g:gitgutter_highlight_lines      = 0
 let g:gitgutter_highlight_linenrs    = 0
 let g:gitgutter_preview_win_floating = 1
 
+let g:gitgutter_sign_added                   = '+'
+let g:gitgutter_sign_modified                = '~'
+let g:gitgutter_sign_removed                 = '_'
+let g:gitgutter_sign_removed_first_line      = '‾'
+let g:gitgutter_sign_removed_above_and_below = '_¯'
+let g:gitgutter_sign_modified_removed        = '~-'
+
 set foldtext=gitgutter#fold#foldtext()
 
 command! Gqf GitGutterQuickFix | copen
@@ -28,10 +35,3 @@ nmap <leader>g] <Plug>(GitGutterNextHunk)
 " hi link GitGutterChangeLineNr       DiffChange
 " hi link GitGutterDeleteLineNr       DiffDelete
 " hi link GitGutterChangeDeleteLineNr DiffChange
-
-let g:gitgutter_sign_added                   = '+'
-let g:gitgutter_sign_modified                = '~'
-let g:gitgutter_sign_removed                 = '_'
-let g:gitgutter_sign_removed_first_line      = '‾'
-let g:gitgutter_sign_removed_above_and_below = '_¯'
-let g:gitgutter_sign_modified_removed        = '~-'
