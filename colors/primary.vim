@@ -112,10 +112,15 @@ SynColor Conceal                      guifg=#6272a4 ctermfg=61    guibg=NONE    
 SynColor CursorColumn                 guifg=NONE    ctermfg=NONE  guibg=#2c323c ctermbg=236  gui=NONE         cterm=NONE
 SynColor CursorLine                   guifg=NONE    ctermfg=NONE  guibg=#2c323c ctermbg=236  gui=NONE         cterm=NONE
 SynColor Directory                    guifg=#429df7 ctermfg=75    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor DiffAdd                      guifg=#1e1e1e ctermfg=234   guibg=#50ef2b ctermbg=82   gui=NONE         cterm=NONE
-SynColor DiffChange                   guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor DiffDelete                   guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor DiffAdd                      guifg=#87d700 ctermfg=2     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor DiffChange                   guifg=#fde026 ctermfg=3     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor DiffDelete                   guifg=#fc2525 ctermfg=1     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor DiffText                     guifg=#6272a4 ctermfg=61    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor diffAdded                    guifg=#50ef2b ctermfg=82    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor diffRemoved                  guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor diffFileId                   guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=bold,reverse cterm=bold,reverse
+SynColor diffNewFile                  guifg=#20cf2b ctermfg=82    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor diffOldFile                  guifg=#c00505 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor ErrorMsg                     guifg=#c91b00 ctermfg=160   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor VertSplit                    guifg=#000000 ctermfg=black guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Folded                       guifg=#1e1e1e ctermfg=234   guibg=#707070 ctermbg=242  gui=NONE         cterm=NONE
@@ -285,11 +290,6 @@ SynColor WhichKey                     guifg=#ad13f9 ctermfg=129   guibg=NONE    
 SynColor WhichKeySeperator            guifg=#50ef2b ctermfg=82    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor WhichKeyGroup                guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor WhichKeyDesc                 guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor diffAdded                    guifg=#50ef2b ctermfg=82    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor diffRemoved                  guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor diffFileId                   guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=bold,reverse cterm=bold,reverse
-SynColor diffNewFile                  guifg=#20cf2b ctermfg=82    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor diffOldFile                  guifg=#c00505 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor debugPc                      guifg=NONE    ctermfg=NONE  guibg=#3bffff ctermbg=87   gui=NONE         cterm=NONE
 SynColor debugBreakpoint              guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=reverse      cterm=reverse
 
