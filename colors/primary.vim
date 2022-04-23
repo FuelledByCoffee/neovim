@@ -176,8 +176,6 @@ SynColor TSConstructor                guifg=#3bffff ctermfg=87    guibg=NONE    
 SynColor TSLabel                      guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSKeywordFunction            guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSException                  guifg=#ad13f9 ctermfg=129   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-
-SynColor TSVariableBuiltin            guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSText                       guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSStrong                     guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSEmphasis                   guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
@@ -187,7 +185,6 @@ SynColor TSLiteral                    guifg=#ffff00 ctermfg=226   guibg=NONE    
 SynColor TSURI                        guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSTag                        guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSTagDelimiter               guifg=#ff1dce ctermfg=200   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor vimMapLhs                    guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor vimMapRhs                    guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor vimBracket                   guifg=#707070 ctermfg=242   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor vimEnvvar                    guifg=#3ac8c5 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
