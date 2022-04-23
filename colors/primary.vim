@@ -80,7 +80,7 @@ SynLink zshVariableDef Variable
 ": }}}
 
 SynColor Normal                       guifg=NONE    ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Variable                     guifg=#4fa0f7 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=Bold
+SynColor Variable                     guifg=#fdb002 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=Bold
 SynColor Function                     guifg=#0098ea ctermfg=4     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Keyword                      guifg=#fcc016 ctermfg=3     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor PreProc                      guifg=#af25c5 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
