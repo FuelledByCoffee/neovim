@@ -23,6 +23,7 @@ nmap <leader>g] <Plug>(GitGutterNextHunk)
 " hi link GitGutterDelete       DiffDelete
 " hi link GitGutterChangeDelete DiffChange
 
+" Not default but not used
 " hi link GitGutterAddLineNr          DiffAdd
 " hi link GitGutterChangeLineNr       DiffChange
 " hi link GitGutterDeleteLineNr       DiffDelete
