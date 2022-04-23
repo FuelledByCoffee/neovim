@@ -11,12 +11,6 @@ function! LightlineBranch()
   return branchname != '' ? ' ' . branchname : ''
 endfunction
 
-function! GitStatus()
-  let [a,m,r] = GitGutterGetHunkSummary()
-  return printf('+%d ~%d -%d', a, m, r)
-endfunction
-
-set statusline+=%{GitStatus()}
 let g:lightline = {
       \ 'colorscheme': 'default',
       \ 'active': {
@@ -24,7 +18,6 @@ let g:lightline = {
       \             [ 'gitbranch', 'gitstatus', 'filename' ] ]
       \ },
       \ 'component_function': {
-      \   'gitstatus' : 'GitStatus',
       \   'gitbranch' : 'LightlineBranch',
       \   'filename': 'LightlineFilename',
       \ },
@@ -53,7 +46,3 @@ let g:lightline.mode_map = {
     \ "\<C-s>": 'S-BLOCK',
     \ 't': 'TERMINAL',
     \ }
-
-function! LightlineReadonly()
-  return &ft !~? 'help\|vimfiler' && &readonly ? '' : ''
-endfunction
