@@ -17,15 +17,16 @@ nmap         gp <Plug>(GitGutterPreviewHunk)
 nmap <leader>g[ <Plug>(GitGutterPrevHunk)
 nmap <leader>g] <Plug>(GitGutterNextHunk)
 
-highlight GitGutterAdd          guifg=#00d900 ctermfg=2 ctermbg=NONE guibg=NONE
-highlight GitGutterChange       guifg=#fdfd00 ctermfg=3 ctermbg=NONE guibg=NONE
-highlight GitGutterDelete       guifg=#ff2222 ctermfg=1 ctermbg=NONE guibg=NONE
-highlight GitGutterChangeDelete guifg=#fdfd00 ctermfg=3 ctermbg=NONE guibg=NONE
+" Defaults
+" hi link GitGutterAdd          DiffAdd
+" hi link GitGutterChange       DiffChange
+" hi link GitGutterDelete       DiffDelete
+" hi link GitGutterChangeDelete DiffChange
 
-highlight GitGutterAddLineNr            guifg=#00d900 ctermfg=2
-highlight GitGutterChangeLineNr         guifg=#fdfd00 ctermfg=3
-highlight GitGutterDeleteLineNr         guifg=#ff2222 ctermfg=1
-highlight GitGutterChangeDeleteLineNr   guifg=#df8202 ctermfg=1
+" hi link GitGutterAddLineNr          DiffAdd
+" hi link GitGutterChangeLineNr       DiffChange
+" hi link GitGutterDeleteLineNr       DiffDelete
+" hi link GitGutterChangeDeleteLineNr DiffChange
 
 let g:gitgutter_sign_added                   = '+'
 let g:gitgutter_sign_modified                = '~'
