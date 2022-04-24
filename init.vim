@@ -157,6 +157,7 @@ xnoremap <S-tab> <gv
 
 inoremap <expr> <tab>   pumvisible() ? "\<C-n>" : "<tab>"
 inoremap <expr> <S-tab> pumvisible() ? "\<C-p>" : "<S-tab>"
+inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "<cr>"
 
 nnoremap <silent>ø zA
 
