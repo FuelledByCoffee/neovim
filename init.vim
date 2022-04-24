@@ -37,9 +37,6 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 
-" Plug 'feline-nvim/feline.nvim'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/lightline.vim'
 
 Plug 'airblade/vim-gitgutter'
@@ -49,7 +46,6 @@ Plug 'tpope/vim-surround'
 
 Plug 'junegunn/vim-easy-align'
 
-Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons' " Nice icons for telescope
 
