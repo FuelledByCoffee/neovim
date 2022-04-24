@@ -85,6 +85,7 @@ set nonumber
 set laststatus=3
 set autoread
 set autowrite
+set nowrap
 set hidden
 set nobackup
 set nowritebackup
