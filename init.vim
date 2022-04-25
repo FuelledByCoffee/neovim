@@ -131,6 +131,7 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
       \| exe "normal! g'\""
       \| endif
 
+autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_listener()
 
 lua require('tree-sitter-config')
 lua require('lsp-config')
