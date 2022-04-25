@@ -18,9 +18,11 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " Syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'nvim-treesitter/playground'
 
 " Completion
@@ -135,9 +137,9 @@ autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_li
 
 lua require('tree-sitter-config')
 lua require('lsp-config')
-" lua require('cmp-config')
-lua require'colorizer'.setup()
-" lua require('feline').setup()
+lua require('colorizer').setup()
+lua require('telescope').setup()
+lua require('telescope').load_extension 'fzf'
 ": }}}
 
 ": Key maps {{{
