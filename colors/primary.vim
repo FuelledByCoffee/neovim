@@ -188,7 +188,7 @@ SynColor TSLiteral                    guifg=#ffff00 ctermfg=226   guibg=NONE    
 SynColor TSURI                        guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSTag                        guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSTagDelimiter               guifg=#ff1dce ctermfg=200   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor vimMapRhs                    guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor vimMapRhs                    guifg=#dd5fdd ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor vimBracket                   guifg=#707070 ctermfg=242   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor vimEnvvar                    guifg=#3ac8c5 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor vimParenSep                  guifg=#d8d8d2 ctermfg=188   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
