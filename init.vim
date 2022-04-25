@@ -265,7 +265,7 @@ endfunction
 " Open terminal
 nnoremap <Leader>at :call FloatTerm()<CR>
 " Open tig, yes TIG, A FLOATING TIGGGG!!!!!!
-nnoremap <Leader>ag :call FloatTerm('"tig"')<CR>
+" nnoremap <Leader>ag :call FloatTerm('"tig"')<CR>
 
 " Terminal Function
 let g:term_buf = 0
