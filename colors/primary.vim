@@ -32,6 +32,7 @@ SynLink Number      Constant
 SynLink Conditional Keyword
 SynLink Parameter   Variable
 SynLink Method      Function
+SynLink Label       Statement
 
 SynLink Include PreProc
 SynLink Define  PreProc
@@ -98,7 +99,6 @@ SynColor Float                        guifg=#3bffff ctermfg=87    guibg=NONE    
 SynColor Identifier                   guifg=#42bdf7 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Statement                    guifg=#ffc026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Repeat                       guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Label                        guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Operator                     guifg=#ffdd00 ctermfg=188   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Exception                    guifg=#ff1dce ctermfg=200   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Title                        guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
@@ -178,7 +178,6 @@ SynColor TSParameterReference         guifg=#ffa026 ctermfg=214   guibg=NONE    
 SynColor TSField                      guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSProperty                   guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSConstructor                guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor TSLabel                      guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSKeywordFunction            guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSException                  guifg=#ad13f9 ctermfg=129   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSText                       guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
