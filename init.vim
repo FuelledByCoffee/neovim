@@ -39,7 +39,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 
-Plug 'itchyny/lightline.vim'
+Plug 'nvim-lualine/lualine.nvim'
 
 Plug 'airblade/vim-gitgutter'
 
@@ -139,6 +139,7 @@ lua require('tree-sitter-config')
 lua require('lsp-config')
 lua require('colorizer').setup()
 lua require('telescope').setup()
+lua require('lualine').setup { options = { theme = 'powerline' }, }
 lua require('telescope').load_extension 'fzf'
 ": }}}
 
