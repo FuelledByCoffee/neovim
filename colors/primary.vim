@@ -77,6 +77,8 @@ SynLink zshFunction    Function
 SynLink zshBrackets    Bracket
 SynLink zshRedir       Operator
 SynLink zshVariableDef Variable
+
+SynLink makeTarget Function
 ": }}}
 
 SynColor Normal                       guifg=NONE    ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
@@ -204,7 +206,6 @@ SynColor diffSubNmae                  guifg=#429df7 ctermfg=75    guibg=NONE    
 SynColor diffFile                     guifg=#3b4048 ctermfg=238   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor makeCommands                 guifg=#d8d8d2 ctermfg=188   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor makeSpecial                  guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor makeTarget                   guifg=#10bf0b ctermfg=34    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor makeIdent                    guifg=#429df7 ctermfg=75    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor makeStatement                guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor makeDString                  guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
