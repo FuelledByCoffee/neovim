@@ -1,9 +1,9 @@
-nnoremap         gs :Git       <bar> wincmd L<CR>
-nnoremap <leader>gc :Git commit<bar> wincmd L<CR>
-nnoremap <leader>gd :Gdiff<CR>
-nnoremap <leader>gb :Git blame<CR>
-nnoremap <leader>gr :Gread<CR>
-nnoremap <leader>gw :Gwrite<CR>
-nnoremap <leader>gP :Git push<CR>
-nnoremap         g- :Git stash<CR>:e<CR>
-nnoremap         g+ :Git stash pop<CR>:e<CR>
+nnoremap         gs <cmd>Git       <bar> wincmd L<CR>
+nnoremap <leader>gc <cmd>Git commit<bar> wincmd L<CR>
+nnoremap <leader>gd <cmd>Gdiff<CR>
+nnoremap <leader>gb <cmd>Git blame<CR>
+nnoremap <leader>gr <cmd>Gread<CR>
+nnoremap <leader>gw <cmd>Gwrite<CR>
+nnoremap <leader>gP <cmd>Git push<CR>
+nnoremap         g- <cmd>Git stash<CR><cmd>e<CR>
+nnoremap         g+ <cmd>Git stash pop<CR><cmd>e<CR>
