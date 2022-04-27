@@ -127,13 +127,12 @@ set signcolumn=yes
 filetype plugin on
 filetype indent on
 
-autocmd filetype help wincmd L
-
 " jump to previous position when reopening a file
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
       \| exe "normal! g'\""
       \| endif
 
+autocmd filetype help wincmd L
 autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_listener()
 autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=250}
 
