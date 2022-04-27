@@ -196,7 +196,6 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 " Escape from terminal mode
 tnoremap <Esc> <C-\><C-n>
-nnoremap <silent> <leader>e <cmd>NERDTreeToggle<CR>
 
 
 " Show syntax highlighting groups for word under cursor
