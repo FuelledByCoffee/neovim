@@ -54,10 +54,10 @@ Plug 'kyazdani42/nvim-web-devicons' " Nice icons for telescope
 
 Plug 'scrooloose/nerdcommenter'
 
-Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'preservim/tagbar',   { 'on': 'TagbarToggle' }
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'preservim/nerdtree',     { 'on':  'NERDTreeToggle' }
+Plug 'preservim/tagbar',       { 'on':  'TagbarToggle' }
 Plug 'rhysd/vim-clang-format', { 'on':  'ClangFormat' }
+Plug 'rust-lang/rust.vim',     { 'for': 'rust' }
 
 call plug#end()
 
