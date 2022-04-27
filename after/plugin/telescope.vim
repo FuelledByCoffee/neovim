@@ -5,7 +5,6 @@ nnoremap <space>h       <cmd>Telescope help_tags<cr>
 nnoremap <space>c       <cmd>Telescope commands<cr>
 nnoremap <space>m       <cmd>Telescope man_pages<cr>
 nnoremap <space>p       <cmd>Telescope pickers<cr>
-nnoremap <space>a       <cmd>Telescope lsp_code_actions<cr>
 nnoremap <space><space> <cmd>Telescope<cr>
 
 nnoremap <leader><tab> <cmd>Telescope keymaps<cr>
