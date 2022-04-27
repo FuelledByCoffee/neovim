@@ -103,6 +103,8 @@ set ignorecase
 set smartcase
 set smartindent
 set smarttab
+set breakindent
+set breakindentopt=shift:2,min:40,sbr
 set scrolloff=7
 set sidescrolloff=5
 set undolevels=100    " How many undos
