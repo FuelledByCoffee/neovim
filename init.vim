@@ -215,7 +215,7 @@ function! TrimWhitespace()
   keeppatterns %s/\s\+$//e
   call winrestview(l:save)
 endfun
-nnoremap <leader><space> :call TrimWhitespace()<cr>
+nnoremap <leader><space> <cmd>call TrimWhitespace()<cr>
 
 ": }}}
 
