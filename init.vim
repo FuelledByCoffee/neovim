@@ -139,14 +139,21 @@ autocmd filetype help wincmd L
 autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_listener()
 autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=250}
 
-lua require('tree-sitter-config')
-lua require('lsp-config')
-lua require('colorizer').setup()
-lua require('telescope').setup()
-lua require('trouble').setup()
-lua require("indent_blankline").setup()
-lua require('lualine').setup { options = { theme = 'powerline' }, }
-lua require('telescope').load_extension 'fzf'
+lua << EOF
+require('tree-sitter-config')
+require('lsp-config')
+require('colorizer').setup()
+require('telescope').setup()
+require('trouble').setup()
+require("indent_blankline").setup()
+require('lualine').setup {
+  options = {
+      theme = 'powerline',
+      globalstatus = true,
+    },
+  }
+require('telescope').load_extension 'fzf'
+EOF
 ": }}}
 
 ": Key maps {{{
