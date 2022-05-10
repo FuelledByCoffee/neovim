@@ -43,7 +43,6 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'folke/trouble.nvim'
 
 Plug 'airblade/vim-gitgutter'
-Plug 'lukas-reineke/indent-blankline.nvim'
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -145,7 +144,6 @@ require('lsp-config')
 require('colorizer').setup()
 require('telescope').setup()
 require('trouble').setup()
-require("indent_blankline").setup()
 require('lualine').setup {
   options = {
       theme = 'powerline',
