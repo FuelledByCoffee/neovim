@@ -113,6 +113,7 @@ set wildmenu
 set wildignorecase    " case is ignored when completing file names and directories
 set shortmess+=c      " Silence insert completion messages
 set completeopt=menu,menuone,noselect
+set complete+=kspell
 set omnifunc=syntaxcomplete#Complete
 set cursorline
 set showtabline=1
