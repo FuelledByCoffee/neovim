@@ -59,6 +59,7 @@ SynLink TSPunctBracket    Bracket
 SynLink TSVariableBuiltin Variable
 SynLink TSParameter       Parameter
 SynLink TSMethod          Method
+SynLink TSTitle           Title
 
 SynLink BashTSFunction Keyword
 
@@ -184,7 +185,6 @@ SynColor TSText                       guifg=#ffff00 ctermfg=226   guibg=NONE    
 SynColor TSStrong                     guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSEmphasis                   guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSUnderline                  guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor TSTitle                      guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSLiteral                    guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSURI                        guifg=#ffff00 ctermfg=226   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSTag                        guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
