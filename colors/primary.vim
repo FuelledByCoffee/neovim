@@ -8,9 +8,9 @@ endif
 let g:colors_name='primary'
 
 if !exists("syntax_cmd") || syntax_cmd == "on"
-  " ":syntax on" works like in Vim 5.7: set colors but keep links
+  " ":syntax on" Set's all colors and links
   command -nargs=* SynColor hi <args>
-  command -nargs=* SynLink hi link <args>
+  command -nargs=* SynLink hi! link <args>
 else
   if syntax_cmd == "enable"
     " ":syntax enable" keeps any existing colors
