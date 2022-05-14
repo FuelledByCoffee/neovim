@@ -33,6 +33,7 @@ SynLink Conditional Keyword
 SynLink Parameter   Variable
 SynLink Method      Function
 SynLink Label       Statement
+SynLink Title       Identifier
 
 SynLink Include PreProc
 SynLink Define  PreProc
@@ -102,7 +103,6 @@ SynColor Statement                    guifg=#ffc026 ctermfg=214   guibg=NONE    
 SynColor Repeat                       guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Operator                     guifg=#ffdd00 ctermfg=188   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Exception                    guifg=#ff1dce ctermfg=200   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Title                        guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Macro                        guifg=#ad13f9 ctermfg=129   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor PreCondit                    guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor StorageClass                 guifg=#ff1dce ctermfg=200   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
