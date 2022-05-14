@@ -114,7 +114,7 @@ SynColor Todo                         guifg=#ad13f9 ctermfg=129   guibg=NONE    
 SynColor Underlined                   gui=underline cterm=underline
 SynColor Cursor                       guifg=NONE    ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=reverse      cterm=reverse
 SynColor ColorColumn                  guifg=NONE    ctermfg=NONE  guibg=#2c323c ctermbg=236  gui=NONE         cterm=NONE
-SynColor CursorLineNr                 guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=bold         cterm=bold
+SynColor CursorLineNr                 guifg=#cccccc ctermfg=214   guibg=NONE    ctermbg=NONE gui=bold         cterm=bold
 SynColor SignColumn                   guifg=NONE    ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Conceal                      guifg=#6272a4 ctermfg=61    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor CursorColumn                 guifg=NONE    ctermfg=NONE  guibg=#2c323c ctermbg=236  gui=NONE         cterm=NONE
