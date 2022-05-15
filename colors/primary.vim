@@ -157,7 +157,7 @@ SynColor TabLine                      guifg=#6272a4 ctermfg=61    guibg=NONE    
 SynColor TabLineSel                   guifg=#f3f3f3 ctermfg=255   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TabLineFill                  guifg=NONE    ctermfg=NONE  guibg=#202020 ctermbg=234  gui=NONE         cterm=NONE
 SynColor Terminal                     guifg=#f3f3f3 ctermfg=255   guibg=#1e1e1e ctermbg=234  gui=NONE         cterm=NONE
-SynColor Visual                       guifg=#1e1e1e ctermfg=234   guibg=#ffa026 ctermbg=214  gui=NONE         cterm=NONE
+SynColor Visual                       guifg=#1e1e1e ctermfg=234   guibg=#bbbbbb ctermbg=214  gui=NONE         cterm=NONE
 SynColor VisualNOS                    guifg=#3e4452 ctermfg=238   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor WarningMsg                   guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor WildMenu                     guifg=#1e1e1e ctermfg=234   guibg=#3bffff ctermbg=87   gui=NONE         cterm=NONE
