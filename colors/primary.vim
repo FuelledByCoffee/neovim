@@ -138,7 +138,7 @@ SynColor LineNr                       guifg=#707070 ctermfg=242   guibg=NONE    
 SynColor MatchParen                   guifg=#d8d8d2 ctermfg=188   guibg=NONE    ctermbg=NONE gui=underline    cterm=underline
 SynColor NonText                      guifg=#3b4048 ctermfg=238   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Pmenu                        guifg=#f3f3f3 ctermfg=255   guibg=#282c34 ctermbg=236  gui=NONE         cterm=NONE
-SynColor PmenuSel                     guifg=#1e1e1e ctermfg=234   guibg=#ffa026 ctermbg=214  gui=NONE         cterm=NONE
+SynColor PmenuSel                     guifg=#1e1e1e ctermfg=234   guibg=#bbbbbb ctermbg=214  gui=NONE         cterm=NONE
 SynColor PmenuSbar                    guifg=NONE    ctermfg=NONE  guibg=#3b4048 ctermbg=238  gui=NONE         cterm=NONE
 SynColor PmenuThumb                   guifg=NONE    ctermfg=NONE  guibg=#f3f3f3 ctermbg=255  gui=NONE         cterm=NONE
 SynColor Question                     guifg=#ad13f9 ctermfg=129   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
