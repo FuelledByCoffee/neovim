@@ -188,6 +188,10 @@ nnoremap <C-H> <C-W>h
 nnoremap <silent> √ <cmd>move+<CR>
 nnoremap <silent> ª <cmd>move-2<CR>
 
+" Move visual block
+xnoremap √ :m '>+1<CR>gv=gv
+xnoremap ª :m '<-2<CR>gv=gv
+
 nnoremap <silent> // <cmd>noh<cr>
 
 " Navigate through quick-fix errors
