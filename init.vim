@@ -136,7 +136,6 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
       \| endif
 
 autocmd filetype help wincmd L
-autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_listener()
 autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=250}
 
 lua << EOF
