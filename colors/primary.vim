@@ -92,7 +92,7 @@ SynColor PreProc                      guifg=#af25c5 ctermfg=196   guibg=NONE    
 SynColor Special                      guifg=#d21d27 ctermfg=1     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Type                         guifg=#42bdf7 ctermfg=75    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Parens                       guifg=#f23d17 ctermfg=1     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Comment                      guifg=#505050 ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor Comment                      guifg=#707070 ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Constant                     guifg=#87d700 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Quote                        guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Character                    guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
