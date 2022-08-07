@@ -92,6 +92,7 @@ set hlsearch
 set incsearch
 set splitright
 set splitbelow
+set path=.,/usr/local/include,/usr/local/src,/usr/include
 set foldlevel=0
 set foldmethod=marker
 set tabstop=2
