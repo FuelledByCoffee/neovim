@@ -73,7 +73,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 ": Settings {{{
 
 let mapleader = ','
-let g:c_syntax_for_h=1
+let g:c_syntax_for_h=0
 let @/ = "" " Don't highlight after source vimrc
 
 syntax on
