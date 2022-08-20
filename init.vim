@@ -98,7 +98,7 @@ set foldmethod=marker
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set expandtab
+set noexpandtab
 set ignorecase
 set smartcase
 set smartindent
