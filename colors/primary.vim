@@ -87,7 +87,7 @@ SynLink makeTarget Function
 SynColor Normal                       guifg=NONE    ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Variable                     guifg=#ffa002 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=Bold
 SynColor Function                     guifg=#0098ea ctermfg=4     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Keyword                      guifg=#fcc016 ctermfg=3     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor Keyword                      guifg=#fc0000 ctermfg=3     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor PreProc                      guifg=#af25c5 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Special                      guifg=#d21d27 ctermfg=1     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Type                         guifg=#42bdf7 ctermfg=75    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
