@@ -32,6 +32,8 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/cmp-path'
 
+Plug 'onsails/lspkind.nvim'
+
 " Snippets
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
@@ -139,20 +141,13 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
 autocmd filetype help wincmd L
 autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=250}
 
-lua << EOF
-require('tree-sitter-config')
-require('lsp-config')
-require('colorizer').setup()
-require('telescope').setup()
-require('trouble').setup()
-require('lualine').setup {
-  options = {
-      theme = 'powerline',
-      globalstatus = true,
-    },
-  }
-require('telescope').load_extension 'fzf'
-EOF
+lua require('tree-sitter-config')
+lua require('lsp-config')
+lua require('colorizer').setup()
+lua require('telescope').setup()
+lua require('trouble').setup()
+lua require('lualine').setup { options = { theme = 'powerline', globalstatus = true, }, }
+lua require('telescope').load_extension 'fzf'
 ": }}}
 
 ": Key maps {{{

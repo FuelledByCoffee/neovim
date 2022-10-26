@@ -26,8 +26,8 @@ local custom_lsp_attach = function(client)
 end
 
 -- Add additional capabilities supported by nvim-cmp
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local lspconfig = require('lspconfig')
 
@@ -43,47 +43,78 @@ for _, lsp in pairs(servers) do
   }
 end
 
-
-local luasnip = require 'luasnip'
+local has_words_before = function()
+  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+end
 
 -- nvim-cmp setup
-local cmp = require 'cmp'
+local cmp = require('cmp')
+local luasnip = require('luasnip')
+local lspkind = require('lspkind')
 cmp.setup {
-  snippet = {
-    expand = function(args)
-      luasnip.lsp_expand(args.body)
-    end,
-  },
+	snippet = {
+		expand = function(args)
+			-- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+			luasnip.lsp_expand(args.body) -- For `luasnip` users.
+			-- require('snippy').expand_snippet(args.body) -- For `snippy` users.
+			-- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+		end,
+	},
+	window = {
+		-- completion = {
+			-- winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+			-- col_offset = -3,
+			-- side_padding = 0,
+		-- },
+		-- documentation = cmp.config.window.bordered(),
+	},
+	formatting = {
+		format = function(entry, vim_item)
+			if vim.tbl_contains({ 'path' }, entry.source.name) then
+				local icon, hl_group = require('nvim-web-devicons').get_icon(entry:get_completion_item().label)
+				if icon then
+					vim_item.kind = icon
+					vim_item.kind_hl_group = hl_group
+					return vim_item
+				end
+			end
+			return lspkind.cmp_format({ with_text = true })(entry, vim_item)
+		end
+	},
   mapping = cmp.mapping.preset.insert({
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
-    ['<CR>'] = cmp.mapping.confirm {
-      behavior = cmp.ConfirmBehavior.Replace,
-      select = true,
-    },
-    ['<Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif luasnip.expand_or_jumpable() then
-        luasnip.expand_or_jump()
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
-    ['<S-Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item()
-      elseif luasnip.jumpable(-1) then
-        luasnip.jump(-1)
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
+    ['<C-e>'] = cmp.mapping.abort(),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
   }),
+	mapping = {
+		['<Tab>'] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.select_next_item()
+			elseif luasnip.expand_or_jumpable() then
+				luasnip.expand_or_jump()
+			else
+				fallback()
+			end
+    end, { "i", "s" }),
+		["<S-Tab>"] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.select_prev_item()
+			elseif luasnip.jumpable(-1) then
+				luasnip.jump(-1)
+			else
+				fallback()
+			end
+		end, { "i", "s" }),
+	},
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'buffer' },
+    { name = 'omni' },
+    { name = 'emoji', insert = true },
   },
 }
 
