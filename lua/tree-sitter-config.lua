@@ -4,7 +4,7 @@ require 'nvim-treesitter.configs'.setup {
 
   sync_install = false,
 
-  ignore_install = {"phpdoc"},
+  -- ignore_install = {"phpdoc"},
 
   highlight = {
     enable = true,
