@@ -146,7 +146,7 @@ lua require('lsp-config')
 lua require('colorizer').setup()
 lua require('telescope').setup()
 lua require('trouble').setup()
-lua require('lualine').setup { options = { theme = 'powerline', globalstatus = true, }, }
+lua require('lualine-config')
 lua require('telescope').load_extension 'fzf'
 ": }}}
 
