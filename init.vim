@@ -187,6 +187,9 @@ nnoremap <silent> ª <cmd>move-2<CR>
 xnoremap √ :m '>+1<CR>gv=gv
 xnoremap ª :m '<-2<CR>gv=gv
 
+" Surround selection in quotes
+xnoremap <space>q c"<C-R>""
+
 nnoremap <silent> // <cmd>noh<cr>
 
 " Navigate through quick-fix errors
