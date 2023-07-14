@@ -82,7 +82,7 @@ syntax on
 colorscheme primary
 
 set mouse=a
-set nonumber
+set number
 set laststatus=3
 set autoread
 set autowrite
