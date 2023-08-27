@@ -61,6 +61,9 @@ SynLink TSVariableBuiltin Variable
 SynLink TSParameter       Parameter
 SynLink TSMethod          Method
 SynLink TSTitle           Title
+SynLink @text.diff.add    diffAdded
+SynLink @text.diff.delete diffDelete
+SynLink @attribute        String
 
 SynLink BashTSFunction Keyword
 
