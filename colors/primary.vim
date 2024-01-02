@@ -64,6 +64,7 @@ SynLink TSTitle           Title
 SynLink @text.diff.add    diffAdded
 SynLink @text.diff.delete diffDelete
 SynLink @attribute        String
+SynLink @variable         Variable
 
 SynLink BashTSFunction Keyword
 
