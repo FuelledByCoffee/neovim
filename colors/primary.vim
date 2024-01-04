@@ -27,17 +27,19 @@ else
 endif
 
 ": Links {{{
-SynLink String      Constant
+" SynLink String      Constant
 SynLink Number      Constant
 SynLink Conditional Keyword
+SynLink Repeat      Keyword
 SynLink Parameter   Variable
 SynLink Method      Function
 SynLink Label       Statement
 SynLink Title       Identifier
 
-SynLink Include PreProc
-SynLink Define  PreProc
-SynLink Bracket Parens
+SynLink Include           PreProc
+SynLink Define            PreProc
+SynLink Bracket           Parens
+SynLink readlineVariable  Variable
 
 SynLink TSOperator        Operator
 SynLink TSType            Type
@@ -63,8 +65,9 @@ SynLink TSMethod          Method
 SynLink TSTitle           Title
 SynLink @text.diff.add    diffAdded
 SynLink @text.diff.delete diffDelete
-SynLink @attribute        String
+" SynLink @attribute        String
 SynLink @variable         Variable
+SynLink @attribute        Keyword
 
 SynLink BashTSFunction Keyword
 
@@ -89,22 +92,23 @@ SynLink makeTarget Function
 ": }}}
 
 SynColor Normal                       guifg=NONE    ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Variable                     guifg=#ffa002 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=Bold
-SynColor Function                     guifg=#ffa002 ctermfg=4     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor Variable                     guifg=#86d700 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=Bold
+SynColor Function                     guifg=#f58720 ctermfg=4     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Keyword                      guifg=#fcd000 ctermfg=3     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor PreProc                      guifg=#af25c5 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Special                      guifg=#f21d27 ctermfg=1     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Type                         guifg=#af3df7 ctermfg=75    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Parens                       guifg=#f23d17 ctermfg=1     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Comment                      guifg=#b0b0b0 ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Constant                     guifg=#87d700 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor Constant                     guifg=#1789a9 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Quote                        guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Character                    guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Boolean                      guifg=#ad13f9 ctermfg=129   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Float                        guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor String                       guifg=#ffdd00 ctermfg=188   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Identifier                   guifg=#42bdf7 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Statement                    guifg=#ffc026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Repeat                       guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+" SynColor Repeat                       guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Operator                     guifg=#ffdd00 ctermfg=188   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Exception                    guifg=#ff1dce ctermfg=200   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Macro                        guifg=#ad13f9 ctermfg=129   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
@@ -222,7 +226,6 @@ SynColor makeStatement                guifg=#ff2525 ctermfg=196   guibg=NONE    
 SynColor makeDString                  guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor makeSString                  guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor makeSpecTarget               guifg=#50ef2b ctermfg=82    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor readlineVariable             guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor readlineKeyword              guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor sqlFold                      guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor sqlStatement                 guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
