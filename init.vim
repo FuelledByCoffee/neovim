@@ -87,7 +87,7 @@ set laststatus=3
 set autoread
 set autowrite
 set nowrap
-set hidden
+set hidden            " Modify buffers not in view
 set nobackup
 set nowritebackup
 set hlsearch
