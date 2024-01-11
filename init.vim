@@ -14,7 +14,10 @@ endif
 
 call plug#begin(home.'/plugged')
 
+" LSP 
+Plug 'onsails/lspkind.nvim' " VS Code like pictograms
 Plug 'neovim/nvim-lspconfig'
+
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -32,7 +35,9 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/cmp-path'
 
-Plug 'onsails/lspkind.nvim'
+" Debugging
+Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
 
 " Snippets
 Plug 'L3MON4D3/LuaSnip'
