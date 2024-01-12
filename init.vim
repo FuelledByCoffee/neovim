@@ -82,6 +82,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 let mapleader = ','
 let g:c_syntax_for_h=0
 let @/ = "" " Don't highlight after source vimrc
+let &showbreak = '>'
 
 syntax on
 colorscheme primary
