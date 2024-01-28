@@ -162,7 +162,7 @@ inoremap jj <esc>
 
 nnoremap <leader>w <cmd>w<cr>
 nnoremap <leader>q <cmd>q<cr>
-nnoremap <leader>d <cmd>bd<cr>
+nnoremap <leader>bd <cmd>bd<cr>
 nnoremap <leader>Q <cmd>qa<cr>
 nnoremap <leader>m <cmd>make<cr>
 
