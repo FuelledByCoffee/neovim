@@ -63,8 +63,9 @@ SynLink TSVariableBuiltin Variable
 SynLink TSParameter       Parameter
 SynLink TSMethod          Method
 SynLink TSTitle           Title
-SynLink @text.diff.add    diffAdded
-SynLink @text.diff.delete diffDelete
+SynLink @diff.plus        diffAdded
+SynLink @diff.minus       diffDelete
+SynLink @markup.link      TSMacro
 " SynLink @attribute        String
 SynLink @variable         Variable
 SynLink @attribute        Keyword
@@ -90,6 +91,8 @@ SynLink zshVariableDef Variable
 
 SynLink makeTarget Function
 ": }}}
+
+SynColor @string.special.url          guifg=#ad13f9 ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 
 SynColor Normal                       guifg=NONE    ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Variable                     guifg=#86d700 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=Bold
