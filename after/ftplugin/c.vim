@@ -6,6 +6,7 @@ setlocal path+=/Library/Developer/CommandLineTools/usr/include/c++/v1
 setlocal path+=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
 setlocal path+=/home/linuxbrew/.linuxbrew/include
 setlocal path+=/opt/homebrew/include
+setlocal path+=$HOME/.local/llvm/include/c++/v1
 
 " Instead of syntax
 setlocal foldmethod=expr
