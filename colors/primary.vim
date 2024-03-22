@@ -68,11 +68,12 @@ SynLink @diff.plus        diffAdded
 SynLink @diff.minus       diffDelete
 SynLink @markup.link      TSMacro
 SynLink @keyword          Keyword
+" SynLink @keyword(105)     specialcomment
 SynLink @keyword.import   PreProc
 SynLink @keyword.directive.define PreProc
-" SynLink @attribute        String
 SynLink @variable         Variable
-SynLink @attribute        Keyword
+SynLink @attribute        Constant
+SynLink @comment          Comment
 
 SynLink BashTSFunction Keyword
 
