@@ -41,8 +41,6 @@ SynLink Define            PreProc
 SynLink Bracket           Parens
 SynLink readlineVariable  Variable
 
-SynLink TSOperator        Operator
-SynLink TSType            Type
 SynLink TSTypeBuiltin     Type
 SynLink TSStructure       Type
 SynLink TSInclude         PreProc
@@ -63,9 +61,15 @@ SynLink TSVariableBuiltin Variable
 SynLink TSParameter       Parameter
 SynLink TSMethod          Method
 SynLink TSTitle           Title
+SynLink @operator         Operator
+SynLink @type             Type
+SynLink @string           String
 SynLink @diff.plus        diffAdded
 SynLink @diff.minus       diffDelete
 SynLink @markup.link      TSMacro
+SynLink @keyword          Keyword
+SynLink @keyword.import   PreProc
+SynLink @keyword.directive.define PreProc
 " SynLink @attribute        String
 SynLink @variable         Variable
 SynLink @attribute        Keyword
@@ -98,9 +102,9 @@ SynColor Normal                       guifg=NONE    ctermfg=NONE  guibg=NONE    
 SynColor Variable                     guifg=#86d700 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=Bold
 SynColor Function                     guifg=#f58720 ctermfg=4     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Keyword                      guifg=#fcd000 ctermfg=3     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor PreProc                      guifg=#af25c5 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor PreProc                      guifg=#c22add ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Special                      guifg=#f21d27 ctermfg=1     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Type                         guifg=#af3df7 ctermfg=75    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor Type                         guifg=#2f7dff ctermfg=75    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Parens                       guifg=#f23d17 ctermfg=1     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Comment                      guifg=#b0b0b0 ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Constant                     guifg=#1789a9 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
@@ -168,8 +172,8 @@ SynColor TSError                      guifg=#c91b00 ctermfg=160   guibg=NONE    
 SynColor TSPunctDelimiter             guifg=#d8d8d2 ctermfg=188   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSPunctSpecial               guifg=#5050ff ctermfg=63    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSConstBuiltin               guifg=#3ac8c5 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor TSStringRegex                guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor TSStringEscape               guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor @string.regex                guifg=#ff2525 ctermfg=196   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor @string.escape               guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSCharacter                  guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSBoolean                    guifg=#ad13f9 ctermfg=129   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor TSFloat                      guifg=#3bffff ctermfg=87    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
