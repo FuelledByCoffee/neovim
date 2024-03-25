@@ -14,6 +14,9 @@ endif
 
 call plug#begin(home.'/plugged')
 
+" Intro screen
+Plug 'goolord/alpha-nvim'
+
 " LSP 
 Plug 'onsails/lspkind.nvim' " VS Code like pictograms
 Plug 'neovim/nvim-lspconfig'
@@ -27,6 +30,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'nvim-treesitter/playground'
+Plug 'Glench/Vim-Jinja2-Syntax'
 
 " Completion
 Plug 'hrsh7th/nvim-cmp'
@@ -154,6 +158,7 @@ lua require('telescope').setup()
 lua require('trouble').setup()
 lua require('lualine-config')
 lua require('telescope').load_extension 'fzf'
+lua require('alpha').setup(require'alpha.themes.startify'.config)
 ": }}}
 
 ": Key maps {{{
