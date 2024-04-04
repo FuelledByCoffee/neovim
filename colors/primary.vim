@@ -63,10 +63,11 @@ SynLink TSMethod          Method
 SynLink TSTitle           Title
 SynLink @operator         Operator
 SynLink @type             Type
+SynLink @type.builtin     Special
 SynLink @string           String
 SynLink @diff.plus        diffAdded
 SynLink @diff.minus       diffDelete
-SynLink @markup.link      TSMacro
+SynLink @markup.link      Macro
 SynLink @keyword          Keyword
 " SynLink @keyword(105)     specialcomment
 SynLink @keyword.import   PreProc
