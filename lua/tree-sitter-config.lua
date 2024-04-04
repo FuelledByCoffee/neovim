@@ -8,7 +8,7 @@ require 'nvim-treesitter.configs'.setup {
 
   highlight = {
     enable = true,
-    disable = {"vim"},
+    disable = {"vim", "tmux"},
 
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = {"make"},
