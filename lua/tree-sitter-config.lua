@@ -4,14 +4,12 @@ require 'nvim-treesitter.configs'.setup {
 
   sync_install = false,
 
-  -- ignore_install = {"phpdoc"},
-
   highlight = {
     enable = true,
     disable = {"vim", "tmux"},
 
     -- Instead of true it can also be a list of languages
-    additional_vim_regex_highlighting = {"make"},
+    -- additional_vim_regex_highlighting = {"make"},
   },
 
   vim.keymap.set("n", "<F2>",  "<cmd>TSHighlightCapturesUnderCursor<cr>", { buffer=0, noremap=true }),
