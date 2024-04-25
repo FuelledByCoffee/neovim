@@ -41,26 +41,6 @@ SynLink Define            PreProc
 SynLink Bracket           Parens
 SynLink readlineVariable  Variable
 
-SynLink TSTypeBuiltin     Type
-SynLink TSStructure       Type
-SynLink TSInclude         PreProc
-SynLink TSConstMacro      PreProc
-SynLink TSMacro           PreProc
-SynLink TSVariable        Variable
-SynLink TSConstant        Constant
-SynLink TSFuncBuiltin     Function
-SynLink TSFunction        Function
-SynLink TSString          String
-SynLink TSKeyword         Keyword
-SynLink TSConditional     Conditional
-SynLink TSNumber          Constant
-SynLink TSKeywordOperator Keyword
-SynLink TSRepeat          Keyword
-SynLink TSPunctBracket    Bracket
-SynLink TSVariableBuiltin Variable
-SynLink TSParameter       Parameter
-SynLink TSMethod          Method
-SynLink TSTitle           Title
 SynLink @operator         Operator
 SynLink @type             Type
 SynLink @type.builtin     Special
@@ -72,6 +52,7 @@ SynLink @keyword          Keyword
 " SynLink @keyword(105)     specialcomment
 SynLink @keyword.import   PreProc
 SynLink @keyword.directive.define PreProc
+SynLink @keyword.directive Macro
 SynLink @variable         Variable
 SynLink @attribute        Constant
 SynLink @comment          Comment
