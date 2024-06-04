@@ -90,7 +90,7 @@ SynColor Special                      guifg=#f21d27 ctermfg=1     guibg=NONE    
 SynColor Type                         guifg=#2f7dff ctermfg=75    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Parens                       guifg=#f23d17 ctermfg=1     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Comment                      guifg=#b0b0b0 ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
-SynColor Constant                     guifg=#1789a9 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
+SynColor Constant                     guifg=#17d9c9 ctermfg=80    guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Quote                        guifg=#ffa026 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Character                    guifg=#ffdd00 ctermfg=220   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Boolean                      guifg=#ad13f9 ctermfg=129   guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
