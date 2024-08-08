@@ -4,4 +4,5 @@ setlocal foldmethod=expr
 setlocal foldexpr=nvim_treesitter#foldexpr()
 
 setlocal noexpandtab
-setlocal tabstop=2
+setlocal tabstop=3
+setlocal shiftwidth=0
