@@ -15,7 +15,7 @@ require 'nvim-treesitter.configs'.setup {
   vim.keymap.set("n", "<F2>",  "<cmd>TSHighlightCapturesUnderCursor<cr>", { buffer=0, noremap=true }),
 
   playground = {
-    enable = true,
+    enable = false,
     disable = {},
     updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
     persist_queries = false, -- Whether the query persists across vim sessions
