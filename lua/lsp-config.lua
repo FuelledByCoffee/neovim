@@ -17,13 +17,15 @@ local custom_lsp_attach = function(client)
 	--    See `:help omnifunc` and `:help ins-completion` for more information.
 	vim.api.nvim_buf_set_option(0, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
-  -- Use LSP as the handler for formatexpr.
-  --    See `:help formatexpr` for more information.
-  vim.api.nvim_buf_set_option(0, 'formatexpr', 'v:lua.vim.lsp.formatexpr()')
+	vim.api.nvim_buf_set_option(0, 'tagfunc', 'v:lua.vim.lsp.tagfunc')
 
-  -- For plugins with an `on_attach` callback, call them here. For example:
-  -- require('completion').on_attach()
-	
+	-- Use LSP as the handler for formatexpr.
+	--    See `:help formatexpr` for more information.
+	vim.api.nvim_buf_set_option(0, 'formatexpr', 'v:lua.vim.lsp.formatexpr()')
+
+	-- For plugins with an `on_attach` callback, call them here. For example:
+	-- require('completion').on_attach()
+
 	vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 		vim.lsp.diagnostic.on_publish_diagnostics, {
 			virtual_text = false,
