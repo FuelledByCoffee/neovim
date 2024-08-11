@@ -36,6 +36,7 @@ end
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+-- Add this later maybe: , 'lua_ls'
 local lspconfig = require('lspconfig')
 
 local servers = { 'pyright', 'rust_analyzer', 'clangd', 'gopls' }
