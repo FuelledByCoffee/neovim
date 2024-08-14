@@ -81,6 +81,8 @@ SynLink makeTarget Function
 
 SynColor @string.special.url          guifg=#ad13f9 ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 
+" SynColor NormalFloat                  guifg=#dddddd ctermfg=NONE  guibg=NONE
+
 SynColor Normal                       guifg=NONE    ctermfg=NONE  guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
 SynColor Variable                     guifg=#86d700 ctermfg=214   guibg=NONE    ctermbg=NONE gui=NONE         cterm=Bold
 SynColor Function                     guifg=#f58720 ctermfg=4     guibg=NONE    ctermbg=NONE gui=NONE         cterm=NONE
