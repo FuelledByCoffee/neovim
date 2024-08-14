@@ -152,8 +152,8 @@ autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", t
 lua require('tree-sitter-config')
 lua require('lsp-config')
 lua require('colorizer').setup()
-lua require('telescope').setup()
-lua require('telescope').load_extension 'fzf'
+lua require('telescope').setup{ pickers = { find_files = { hidden=true, no_ignore=true } } }
+lua require('telescope').load_extension('fzf')
 lua require('trouble').setup()
 lua require('lualine-config')
 lua require('alpha').setup(require'alpha.themes.startify'.config)
