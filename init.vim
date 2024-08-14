@@ -175,6 +175,9 @@ nnoremap <silent><s-tab>  <cmd>bNext<cr>
 xnoremap <tab>   >gv
 xnoremap <S-tab> <gv
 
+" list buffers and jump to a chosen one
+nnoremap <Leader>be :ls<CR>:b<Space>
+
 inoremap <expr> <tab>   pumvisible() ? "\<C-n>" : "<tab>"
 inoremap <expr> <S-tab> pumvisible() ? "\<C-p>" : "<S-tab>"
 inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "<cr>"
