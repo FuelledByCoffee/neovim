@@ -153,9 +153,9 @@ lua require('tree-sitter-config')
 lua require('lsp-config')
 lua require('colorizer').setup()
 lua require('telescope').setup()
+lua require('telescope').load_extension 'fzf'
 lua require('trouble').setup()
 lua require('lualine-config')
-lua require('telescope').load_extension 'fzf'
 lua require('alpha').setup(require'alpha.themes.startify'.config)
 ": }}}
 
