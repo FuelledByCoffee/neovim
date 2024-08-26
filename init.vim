@@ -39,6 +39,7 @@ Plug 'hrsh7th/cmp-path'
 
 " Debugging
 Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-neotest/nvim-nio'
 Plug 'rcarriga/nvim-dap-ui'
 
 " Snippets
